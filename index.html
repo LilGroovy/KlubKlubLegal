@@ -51,9 +51,49 @@
         margin-bottom: 0.5em;
         font-size: 1.1em; /* Slightly smaller heading */
       }
+
+      /* --- NEW NAVBAR STYLES --- */
+      .navbar {
+        padding-bottom: 15px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #eee; /* Matches your other borders */
+      }
+      .navbar ul {
+        list-style: none; /* Removes bullets */
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Centers the links */
+      }
+      .navbar li {
+        display: inline-block; /* Makes links horizontal */
+        margin: 0 15px; /* Adds spacing between links */
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #555; /* Standard nav color */
+        font-weight: 500;
+      }
+      .navbar a:hover {
+        color: #007aff; /* Uses your existing link color on hover */
+      }
+      /* Style for the *current* page's link */
+      .navbar a.active {
+        color: #333; /* Makes it dark, like body text */
+        font-weight: 700; /* Bolder */
+      }
+      /* --- END NEW STYLES --- */
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" class="active">Privacy Policy</a>
+        </li>
+        <li><a href="termsofuse.html">Terms of Use</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
     <h1>KlubKlub Privacy Policy</h1>
     <p>Last updated: October 27, 2025</p>
     <p>
